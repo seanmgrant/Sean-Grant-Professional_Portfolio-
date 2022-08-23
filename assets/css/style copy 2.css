@@ -44,11 +44,11 @@ body {
   font-weight: 700;
 }
 
-.links a{
+.nav a{
   color: #000;
 }
 
-.links :hover {
+.nav :hover {
   color: #ff0028;
 }
  @media screen and (max-width: 725px) {
