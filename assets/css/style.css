@@ -1,30 +1,40 @@
+/* CSS Var assignemt */
 *{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --bColor:#beef00;
+  --black: #000;
+  /* font familt assigemnt */
+  font-family:Arial, Helvetica, sans-serif, Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
   margin: 0;
+  background-color: var(--bColor);
 }
 
+/* HEADER STYLING */
 .header{
-  display:flex;
+  display: flex;
   align-items: center;
-  background-color:#f4cd0a;
   height: 100px;
-}
 
+}
 .header h1{
-  background-color:#ff1d58;
-  color:#f4cd0a;
+  background-color: var(--black);
+  color:  var(--bColor);
   padding: 12px;
 }
 
 .header img{
   max-width: 100%;
   max-height: 100%;
-  margin-right: 20px;
+}
+
+.header-title img{
+  max-height: 500%;
+  max-width: 500%;
 }
 
 .header-title{
@@ -33,97 +43,52 @@ body {
   height: 100%;
 }
 
-.links{
+.header-title h1 {
+  padding: 12px;
+}
+
+.hover {
   display: flex;
   height: 100%;
-  width: 70%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content:space-around;
   align-items: center;
   margin-left: auto;
   margin-right: 20px;
   font-weight: 700;
+  font-size:larger;
+  color: #ff0028;
 }
 
-.links a{
-  color:#ff1d58;
+.hover a{
+  color: var(--black);
 }
 
-.links :hover {
-  color: #107ee6;
-}
-
-@media screen and (max-width: 725px) {
-  .header {
-      flex-direction: column;
-      height: 100%;
-  }
-  .header-title img{
-      display: flex;
-      flex-direction: row;
-      max-height: 25%;
-      max-width: 25%;
-  }
-
-  .header-title{
-      display: flex;
-      align-items: center;
-  }
-
-  .header-title h1{
-      padding:12px;
-  }
-
-  .links{
-      display: flex;
-      flex-direction: row;
-      background-color: #ff1d58;
-      width:100%;
-  }
-
-  .links a{
-      color:#f4cd0a;
-  }
-
-  main {
-  max-width: 1200px;
-  }
-}
-
-.figure{
+.wave-image {
   display: flex;
   position: relative;
-  height: 150px;
-  background-color: aqua;
-  margin: 0px;
+  height: 178px;
+  background-color:var(--bColor);
 }
 
-.figure img{
+.wave-image img{
   width: 100%;
   height: 100%;
-  transform: scaleX(-1);
+
 }
 
-.figure-label{
+.wave-label{
   position: absolute;
   bottom: 10px;
   right: 25px;
-  color: #f4cd0a;
+  color: var(--bColor);
 }
 
 .content{
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: aqua;
-}
-
-.side-title{
-  display: flex;
-  background-color: #f4cd0a;
-  width: 15%;
-  padding-right: 20px;
-  justify-content: flex-end;
-  border-right: 2px black solid;
+  background-color: var(--bColor);
 }
 
 .about-me{
@@ -131,23 +96,152 @@ body {
   margin-block: 20px;
 }
 
-.section-content{
-  padding:20px;
-  width: 80%;
+.side-title{
+  text-align: end;
+  width: 15%;
+  padding-right: 20px;
+  border-right: 2px solid var(--black);
 }
 
-.image-large{
+.section-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0.5em;
+  padding:20px;
   width: 100%;
 }
 
-.gallery img{
-  width: 48%;
-  padding-bottom: 20px;
+.Challenge-1{
+  display: flex;
+  position: relative;
+}
+
+.large-image{
+  width: 100%;
+  max-width: 100%;
+  border: 7px solid var(--black);
+  position: relative;
+  opacity: 0.9;
+}
+/* format of horiseon image */
+.big-image{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  color: var(--bColor);
+  background-color: var(--black);
+}
+/* tiny image format */
+.tiny-image{
+width: 100%;
+height: 100%;
+position: relative;
+border: 7px solid var(--black);
 }
 .gallery{
-  padding-block: 20px;
   display:flex;
   flex-wrap:wrap;
   flex-direction: row;
   justify-content: space-between;
 }
+.photo-gallery{
+  display: flow-root;
+  position: relative;
+  width: 48%;
+  padding:1px;
+  opacity: 0.8;
+}
+
+.image-small-title{
+    position: absolute;
+    bottom: 20px;
+    left:10px;
+    font-size: 20px;
+    color: var(--bColor);
+    background-color: var(--black);
+}
+
+.mini-gal{
+  width: 100%;
+  position: relative;
+}
+/* title bars for tiny images */
+.tiny-image-title{
+  position:absolute;
+  bottom: 30px;
+  left: 10px;
+  font-size: 20px;
+  color: var(--bColor) ;
+  background-color: var(--black) ;
+}
+/* side bar my work display */
+.my-work {
+  display: flex;
+}
+
+/* side bar contact me display */
+.contact-me {
+  display:flex;
+  margin-block: 30px;
+}
+/* contact me assiments */
+.contact-bar {
+  display: flex;
+  width: 100%;
+  justify-content:space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size:larger;
+}
+
+.contact-bar a {
+  color:var(--black);
+}
+/* HEADER STYLING END */
+
+/* PSEUDO CLASSES AND PSEUDO ELEMENTS */
+.hover :hover {
+  color: #ff0028;
+}
+
+.contact-bar :hover {
+  color:#ff0028
+}
+
+.photo-gallery:hover, .large-image:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 10px #ff0028, 0 0 20px #ff0028;
+  padding: 0;
+  transform: scale(1.01);
+
+}
+
+/* PSEUDO CLASSES AND PSEUDO ELEMENTS END */
+
+/* Media query */
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+

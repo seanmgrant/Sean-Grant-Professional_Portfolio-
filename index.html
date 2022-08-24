@@ -7,76 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
 </head>
 
 <body>
-
+    <!-- nav bar and header -->
     <header class="header">
         <span class="header-title">
-            <img src="./assets/images/me.jpg">
-            <h1>madisen vogel</h1>
+            <img src="./assets/images/SG.jpg" alt="seans head shot">
+            <h1>Sean Grant</h1>
         </span>
-        <nav class="links">
-            <a href="#">about me</a>
-            <a href="#">work</a>
-            <a href="#">contact me</a>
-            <a href="#">resume</a>
+        <nav class="hover">
+            <a href="#about-me">About Me</a>
+            <a href="#my-work">Work</a>
+            <a href="#contact-me">Contact me</a>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vR_CPXkXm8EbFFnd5G5QwkqXNpdBKz40kofaoJMxRYicP_Hb4xyft3FPmD52DZPU-xT1bqqUqPlaByi/pub">Resume</a>
         </nav>
     </header>
-
-    <div class="figure">
-        <img src="assets/images/background.jpg"/>
-        <div class="figure-label">
-            <h1>fullstack web developer</h1>
+<!-- wave photo image -->
+    <div class="wave-image">
+        <img src="./assets/images/black.jpg" />
+        <div class="wave-label">
+            <h1>Fullstack Web Developer</h1>
         </div>
     </div>
-
-    <div class="content">
-        <div class="about-me">
+<!-- About Me -->
+    <section class="content">
+        <div class="about-me" id="about-me">
             <div class="side-title">
-                <h1>about <br> me</h1>
+                <h1>About <br> Me</h1>
             </div>
             <div class="section-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error in voluptas quia illo possimus quaerat dolore numquam veritatis tempore neque recusandae dicta temporibus praesentium ipsum, accusamus fugiat quis pariatur optio.</p>
+                <p>A life-long musician, Sean realized his passion for tech while working as a music producer. After he completes Denver University’s fullstack bootcamp, he hopes to combine his interests and create music and video software plugins.</p>
             </div>
 
         </div>
-
-
-        <div class="about-me">
-            <div class="side-title">
-                <h1>work</h1>
+<!-- work section -->
+        <div class="my-work" >
+            <div id="my-work" class="side-title">
+                <h1>Work</h1>
             </div>
             <div class="section-content">
-                <img class="image-large" src="assets/images/challenge.png"/>
-                <div class="gallery">
-
-
-                    <img src="assets/images/form.png"/>
-    
-                    <img  src="assets/images/project1.png"/>
-
-                    <img src="assets/images/project2.png"/>
-
-                    <img src="assets/images/activity2.png"/>
+                <div class="Challenge-1">
+                    <a href="https://seanmgrant.github.io/Challenge-1/">
+                        <img class="large-image" src="./assets/images/horiseon -1.png" alt="horiseon webpage"/>
+                    </a>
+                    <div class="big-image">
+                        <h1>Horiseon webpage <br> HTML/CSS </h1> 
+                    </div>
                 </div>
-
-
-
+                <div class="gallery">
+                    <div class="photo-gallery">
+                        <a class="mini-gal" href="https://seanmgrant.github.io/Mini-project-2-flexbox/">
+                            <img class="tiny-image" src="./assets/images/flexbox-1.png" alt="css form"/>
+                    </a>
+                        <div>
+                            <h1 class="tiny-image-title">CSS Form <br> HTML/CSS</h1>
+                        </div>
+                    </div>
+                    <div class="photo-gallery">
+                        <a class="mini-gal" href="https://seanmgrant.github.io/box-style/">
+                            <img class="tiny-image" src="./assets/images/css-box-styling.png" alt="CSS cheatsheet"/> 
+                        </a>
+                        <h1 class="tiny-image-title">Box Style <br> HTML/CSS </h1>
+                    </div>
+                   <div class="photo-gallery">
+                    <a class="mini-gal" href="https://seanmgrant.github.io/mini-project-1-web-page-/"> <img class="tiny-image" src="./assets/images/webpage-1.png" alt="webpage coming soon" />
+                    </a>
+                    <h1 class="tiny-image-title"> Website <br> HTML/CSS</h1>  
+                   </div>
+                    <div class="photo-gallery">
+                        <a class="mini-gal" href="https://seanmgrant.github.io/css-positioning-/">
+                            <img class="tiny-image" src="./assets/images/css-post.png" alt="css positioning"/>
+                        </a>
+                        <h1 class="tiny-image-title"> CSS Positioning <br> HTML/CSS</h1>
+                    </div>
+                </div>
             </div>
-
-
-
         </div>
-
-        <!-- <div class="about-me">
+<!-- Contact section -->
+        <div class="contact-me" id="contact-me">
             <div class="side-title">
-                <h1>contact <br> me</h1>
-            </div>
-            <div class="about-me-text">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error in voluptas quia illo possimus quaerat dolore numquam veritatis tempore neque recusandae dicta temporibus praesentium ipsum, accusamus fugiat quis pariatur optio.</p>
-            </div> -->
+                <h1>Contact <br> Me</h1>
 
+            </div>
+
+            <section class="contact-bar">
+                <a href="#">303-799-8457</a>
+                <a href="#">seangrant@fakemail.com</a>
+                <a href="https://www.linkedin.com/in/sean-grant-a7858551/">Linkedin</a>
+                <a href="https://github.com/seanmgrant">Github</a>
+            </section>
         </div>
-    </div>
+    </section> <!-- end of main content section-->
+
 </body>
+
+</html>
