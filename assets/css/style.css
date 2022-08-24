@@ -62,6 +62,7 @@ body {
 
 .hover a{
   color: var(--black);
+  text-underline-position: under;
 }
 
 .wave-image {
@@ -199,6 +200,7 @@ border: 7px solid var(--black);
 
 .contact-bar a {
   color:var(--black);
+  text-underline-position: under;
 }
 /* HEADER STYLING END */
 
