@@ -1,5 +1,5 @@
 ## Portfolio
-https://seanmgrant.github.io/Sean-Grant-Professional_Portfolio-/#contact-me
+https://seanmgrant.github.io/Sean-Grant-Professional_Portfolio-/
 
 ## Description
  
